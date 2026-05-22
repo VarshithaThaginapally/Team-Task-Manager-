@@ -1,0 +1,152 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9966,#ff4da6,#b300ff);
+    overflow:hidden;
+}
+
+/* MAIN CARD */
+
+.container{
+    width:850px;
+    height:450px;
+    background:#fff;
+    border-radius:18px;
+    display:flex;
+    overflow:hidden;
+    box-shadow:0 10px 35px rgba(0,0,0,0.25);
+}
+
+/* LEFT DESIGN */
+
+.left{
+    width:50%;
+    position:relative;
+    background:#fff;
+    overflow:hidden;
+}
+
+/* BIG SHAPE */
+
+.left::before{
+    content:'';
+    position:absolute;
+    width:380px;
+    height:380px;
+    background:linear-gradient(180deg,#ff4da6,#9900cc);
+    border-radius:55% 45% 65% 35%;
+    top:40px;
+    left:-120px;
+    transform:rotate(-20deg);
+    box-shadow:0 0 30px rgba(0,0,0,0.1);
+}
+
+/* WHITE CURVE */
+
+.left::after{
+    content:'';
+    position:absolute;
+    width:430px;
+    height:430px;
+    border:20px solid rgba(255,255,255,0.6);
+    border-radius:55% 45% 65% 35%;
+    top:20px;
+    left:-150px;
+    transform:rotate(-20deg);
+}
+
+/* SMALL CIRCLE */
+
+.circle{
+    position:absolute;
+    width:120px;
+    height:120px;
+    background:linear-gradient(135deg,#ffd36b,#ff7f50);
+    border-radius:50%;
+    bottom:-20px;
+    left:80px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:40px;
+}
+
+.right h2{
+    margin-bottom:30px;
+    font-size:32px;
+    color:#333;
+}
+
+/* INPUT BOX */
+
+.input-box{
+    width:100%;
+    margin-bottom:18px;
+}
+
+.input-box input{
+    width:100%;
+    padding:14px 18px;
+    border:none;
+    background:#f2f2f2;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+/* BUTTON */
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:25px;
+    background:linear-gradient(90deg,#ff9966,#ff4da6,#9900cc);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+/* LINKS */
+
+.links{
+    margin-top:15px;
+    font-size:14px;
+    color:#777;
+}
+
+.links a{
+    text-decoration:none;
+    color:#9900cc;
+    font-weight:500;
+}
+
+.register{
+    margin-top:30px;
+}
